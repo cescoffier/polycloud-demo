@@ -10,7 +10,7 @@ import java.time.temporal.ChronoUnit;
 
 @RegisterRestClient(configKey = "heroes-service")
 public interface HeroService {
-    
+
     @GET
     @Path("/random")
     @Timeout(value = 3, unit = ChronoUnit.SECONDS)
